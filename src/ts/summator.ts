@@ -1,5 +1,5 @@
-function summator(): Function {
-  let total: number = 0;
+function summator(initValue: number = 0): Function {
+  let total: number = initValue;
 
 
   function sum(a: number = 0): Function {
@@ -11,7 +11,6 @@ function summator(): Function {
 
     addToSum.toString = () => {
       const result = total.toString();
-      total = 0;
       return result;
     }
 
